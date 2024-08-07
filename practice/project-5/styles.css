@@ -1,0 +1,13 @@
+body{
+    font-size: 2rem;
+    color: blue;
+}
+.space{
+    color: brown;
+    opacity:0.1
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.281);
+}
+button{
+    padding: 10px 12px;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content:start;
+    width: 100%;
+}
+
+#scoreInput{
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-top: 2px;
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+}
