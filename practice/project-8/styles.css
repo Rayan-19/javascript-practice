@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calanderBody{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px violet;
+    border-radius: 25px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#monthName{
+    background-color: red;
+    font-size: 4rem;
+    text-align: center;
+}
+#dayName{
+    font-size: 2rem;
+    text-align: center;
+}
+#currentDate{
+    font-size: 18rem;
+    text-align: center;
+}
+#currentYear{
+    font-size: 2rem;
+    text-align: center;
+}

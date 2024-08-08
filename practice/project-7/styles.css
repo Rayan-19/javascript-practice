@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    /* background-color:var(--color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#colorGenerateBtn{
+   font-size: 2rem;
+   padding: 10px 20px;
+   border-radius: 30px;
+   box-shadow: 2px 2px 30px rgb(84, 84, 84);
+   color: aliceblue;
+   background-color: black;
+   border: none;
+}
