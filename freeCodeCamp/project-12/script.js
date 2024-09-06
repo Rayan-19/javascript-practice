@@ -133,18 +133,6 @@ const descriptionInput = document.getElementById("description-input");
 let taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTaskId = null;
 
-const renderTasks = () => {
-  tasksContainer.innerHTML = taskData.map(({ id, title, date, description }) => `
-    <div class="task" id="${id}">
-      <p><strong>Title:</strong> ${title}</p>
-      <p><strong>Date:</strong> ${date}</p>
-      <p><strong>Description:</strong> ${description}</p>
-      <button onclick="editTask('${id}')" class="btn">Edit</button>
-      <button onclick="deleteTask('${id}')" class="btn">Delete</button>
-    </div>
-  `).join('');
-};
-
 const saveTask = () => {
   const task = {
     id: currentTaskId || `${Date.now()}`,
@@ -162,6 +150,18 @@ const saveTask = () => {
   localStorage.setItem("data", JSON.stringify(taskData));
   resetForm();
   renderTasks();
+};
+
+const renderTasks = () => {
+  tasksContainer.innerHTML = taskData.map(({ id, title, date, description }) => `
+    <div class="task" id="${id}">
+      <p><strong>Title:</strong> ${title}</p>
+      <p><strong>Date:</strong> ${date}</p>
+      <p><strong>Description:</strong> ${description}</p>
+      <button onclick="editTask('${id}')" class="btn">Edit</button>
+      <button onclick="deleteTask('${id}')" class="btn">Delete</button>
+    </div>
+  `).join('');
 };
 
 const deleteTask = (id) => {
